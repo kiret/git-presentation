@@ -41,12 +41,6 @@
                 <section>
                     <h1>Code versioning</h1>
                     <h3>An introduction with Git</h3>
-                    <p>
-                        <small>By <a href="http://blog.skyplabs.net">Paul-Emmanuel Raoul</a> / <a href="mailto:skyper@skyplabs.net">skyper@skyplabs.net</a> / <a href="https://twitter.com/SkypLabs">@SkypLabs</a></small>
-                    </p>
-                    <p style="margin-top: .5em">
-                        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
-                    </p>
                 </section>
 
                 <section>
@@ -140,7 +134,7 @@
                             <p class="fragment">- review a history log of changes made</p>
                             <p class="fragment">- view differences between versions</p>
                             <p class="fragment">- retrieve old versions</p>
-                            <li class="fragment">Anyone needing to share changes with collaborators</li>    
+                            <li class="fragment">Anyone needing to share changes with collaborators</li>
                         </ul>
                     </section>
 
@@ -151,10 +145,10 @@
                             <p class="fragment">- PHP, Ruby, Ruby on Rails, Perl, Python, ASP</p>
                             <p class="fragment">- Java, C, C++, C#, Objective-C</p>
                             <p class="fragment">- ActionScript, CoffeeScript, Haskell, Scala, Shell scripts</p>
-                            <li class="fragment">Not as useful for tracking non-text files</li>    
+                            <li class="fragment">Not as useful for tracking non-text files</li>
                             <p class="fragment">- images, movies, music, fonts</p>
                         </ul>
-                    </section>		
+                    </section>
                 </section>
 
                 <section>
@@ -279,7 +273,7 @@
                         <p>&nbsp;</p>
                         <p>If you want a copy of an existing Git repository :</p>
                         <pre>
-                            <code data-trim>git clone git@github.com:docker/docker.git</code>
+                            <code data-trim>git clone https://github.com/kiret/git-presentation.git</code>
                         </pre>
                     </section>
 
@@ -295,7 +289,7 @@
                         <p>To add files to be tracked :</p>
                         <pre>
                             <code data-trim>
-git add *.c
+git add *.php
 git add include/
 git add README.md
                             </code>
@@ -358,126 +352,216 @@ git add README.md
                             <p>- Bad: "Updates member report, we should discuss if this is right next week"</p>
                         </ul>
                     </section>
+
+                    <section>
+                        <h2>Commit messages example</h2>
+                        <p>&nbsp;</p>
+                        <p style="text-align: left;">#323094 - Fixes bug in admin logout</p>
+                        <p>&nbsp;</p>
+                        <p style="text-align: left;">When an admin logged out of the admin area, they,</p>
+                        <p style="text-align: left;">could not log in to the members area because their</p>
+                        <p style="text-align: left;">session[:user_id] was still set to the admin ID. This patch</p>
+                        <p style="text-align: left;">fixes the bug by setting session[:user_id] to null when</p>
+                        <p style="text-align: left;">any user logs out of any area.</p>
+                    </section>
                 </section>
-                
+
                 <section>
                     <h2>Git logging & log search</h2>
 
                     <pre>
-                        <code>
+                        <code data-trim>
                             git log [-n]
                         </code>
                     </pre>
                     <pre>
-                        <code>
+                        <code data-trim>
                             git log [--since=][--after=][--until=][--before=]
                         </code>
                     </pre>
                     <pre>
-                        <code>
-                            git log [--author][--grep=]
+                        <code data-trim>
+                            git log [--author=][--grep=]
                         </code>
                     </pre>
                 </section>
-                
+
                 <section>
                     <section>
                         <h2>Git workflow</h2>
-                        
+
                         <figure>
                             <img src="img/tree_structure.png" />
                         </figure>
                     </section>
-                    
+
                     <section>
                         <h2>Git workflow</h2>
-                        
+
+                        <p>&nbsp;</p>
+                        <p>Commit multiple file versions</p>
                         <figure>
-                            <video width="320" height="240" controls>
+                            <video width="500" height="380" controls>
                                 <source src="video/git_concepts_2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </figure>
                     </section>
-                    
+
                     <section>
                         <h2>Git workflow</h2>
-                        
+
+                        <p>&nbsp;</p>
+                        <p>Commit hash values</p>
                         <figure>
-                            <video width="320" height="240" controls>
+                            <video width="500" height="380" controls>
                                 <source src="video/git_concepts_3.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </figure>
                     </section>
-                    
+
                     <section>
                         <h2>Git workflow</h2>
-                        
+
+                        <p>&nbsp;</p>
+                        <p>The HEAD pointer</p>
                         <figure>
-                            <video width="320" height="240" controls>
+                            <video width="500" height="380" controls>
                                 <source src="video/git_concepts_4.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </figure>
                     </section>
                 </section>
-                
+
                 <section>
                     <section>
                         <h2>Git - making changes to files</h2>
-                        
+
                         <pre>
-                            <code>
-                                git add
-                                git commit -m "some message"
+                            <code data-trim>
+git add
+git commit -m "some message"
                             </code>
                         </pre>
                         <pre>
-                            <code>
+                            <code data-trim>
                                 git diff [--staged][--cached]
                             </code>
                         </pre>
                     </section>
-                    
+
                     <section>
                         <pre>
-                            <code>
+                            <code data-trim>
                                 git rm file_name
                             </code>
                         </pre>
                         <pre>
-                            <code>
+                            <code data-trim>
                                 git mv file_name new_file_name
                             </code>
                         </pre>
                     </section>
                 </section>
-                
+
                 <section>
                     <section>
                         <h2>Git - undoing changes</h2>
-                        
+
                         <pre>
-                            <code>
+                            <code data-trim>
                                 git checkout -- index.html
                             </code>
                         </pre>
                         <pre>
-                            <code>
+                            <code data-trim>
                                 git reset HEAD file_name
                             </code>
                         </pre>
                         <pre>
-                            <code>
+                            <code data-trim>
                                 git commit --amend -m "new message here"
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim>
+                                git revert
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <h2>Git - undoing changes</h2>
+
+                        <pre>
+                            <code data-trim>
+                                git reset [HEAD] index.html
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim>
+                                git revert --soft
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim>
+                                git revert --mixed (default)
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim>
+                                git revert --hard
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim>
+                                git clean [-n][-f]
                             </code>
                         </pre>
                     </section>
                 </section>
-                
-                <section>Git - Ignoring files</section>
-               
+
+                <section>
+                    <section>
+                        <h2>Git - Ignoring files</h2>
+
+                        <p class="fragment" style="text-align: left;">.gitignore</p>
+                        <p>&nbsp;</p>
+                        <h4 class="fragment">Understanding what to ignore</h4>
+                        <ul class="fragment">
+                            <li>compiled source code</li>
+                            <li>packages and compressed files</li>
+                            <li>logs and databases</li>
+                            <li>operating system generated files</li>
+                            <li>user-uploaded assets (images, PDFs, videos)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Git - Ignoring files</h2>
+
+                        <p>&nbsp;</p>
+                        <p>Tips</p>
+                        <a href="https://help.github.com/articles/ignoring-files">https://help.github.com/articles/ignoring-files</a>
+                        <p>&nbsp;</p>
+                        <p>Github repository with some great ideas</p>
+                        <a href="https://github.com/github/gitignore">https://github.com/github/gitignore</a>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Git branching</h2>
+
+                        <video width="500" height="380" controls>
+                            <source src="video/git_branching_1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </section>
+                </section>
+
                 <section>
                     <section>
                         <h2>Git branching</h2>
