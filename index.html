@@ -554,141 +554,120 @@ git commit -m "some message"
                 <section>
                     <section>
                         <h2>Git branching</h2>
-
-                        <video width="500" height="380" controls>
-                            <source src="video/git_branching_1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h2>Git branching</h2>
                         <p class="fragment">Git's "killer feature"</p>
                         <p class="fragment">Incredibly lightweight</p>
                         <p class="fragment">Designed to be used as often as possible</p>
                     </section>
 
                     <section>
-                        <h2>Basic branching</h2>
-                        <figure>
-                            <img src="img/basic-branching-1.png" alt="Basic branching 1">
-                            <figcaption style="font-style: italic; font-size: .5em">Basic branching 1 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
+                        <h2>Git branching</h2>
+
+                        <video width="500" height="380" controls>
+                            <source src="video/git_branching_1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </section>
 
                     <section>
-                        <h2>Basic branching</h2>
-                        <figure>
-                            <img src="img/basic-branching-2.png" alt="Basic branching 2">
-                            <figcaption style="font-style: italic; font-size: .5em">Basic branching 2 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
+                        <h2>Git branching</h2>
+
+                        <p>Create a new branch</p>
+                        <pre>
+                            <code data-trim>
+                                git branch [new_branch_name]
+                            </code>
+                        </pre>
+                        <p>&nbsp;</p>
+                        <p>Switch to a new branch</p>
+                        <pre>
+                            <code data-trim>
+                                git checkout [-b] branch_name
+                            </code>
+                        </pre>
                     </section>
 
                     <section>
-                        <h2>Basic branching</h2>
-                        <figure>
-                            <img src="img/basic-branching-3.png" alt="Basic branching 3">
-                            <figcaption style="font-style: italic; font-size: .5em">Basic branching 3 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
+                        <h2>Git branching</h2>
+
+                        <p>Difference between branches</p>
+                        <pre>
+                            <code data-trim>
+                                git diff branch1..branch2^ [--color-words]
+                            </code>
+                        </pre>
+                        <p>&nbsp;</p>
+                        <p>Renaming branches</p>
+                        <pre>
+                            <code data-trim>
+                                git branch -m old_name new_name
+                            </code>
+                        </pre>
                     </section>
 
                     <section>
-                        <h2>Basic branching</h2>
-                        <figure>
-                            <img src="img/basic-branching-4.png" alt="Basic branching 4">
-                            <figcaption style="font-style: italic; font-size: .5em">Basic branching 4 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
+                        <h2>Git branching</h2>
 
-                    <section>
-                        <h2>Basic branching</h2>
-                        <figure>
-                            <img src="img/basic-branching-5.png" alt="Basic branching 5">
-                            <figcaption style="font-style: italic; font-size: .5em">Basic branching 5 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h2>Basic branching</h2>
-                        <figure>
-                            <img src="img/basic-branching-6.png" alt="Basic branching 6">
-                            <figcaption style="font-style: italic; font-size: .5em">Basic branching 6 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h2>The rebase feature</h2>
-                        <figure>
-                            <img src="img/interesting-rebase-1.png" alt="Interesting rebase 1">
-                            <figcaption style="font-style: italic; font-size: .5em">Interesting rebase 1 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h2>The rebase feature</h2>
-                        <figure>
-                            <img src="img/interesting-rebase-2.png" alt="Interesting rebase 2">
-                            <figcaption style="font-style: italic; font-size: .5em">Interesting rebase 2 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h2>The rebase feature</h2>
-                        <figure>
-                            <img src="img/interesting-rebase-3.png" alt="Interesting rebase 3">
-                            <figcaption style="font-style: italic; font-size: .5em">Interesting rebase 3 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h2>The rebase feature</h2>
-                        <figure>
-                            <img src="img/interesting-rebase-4.png" alt="Interesting rebase 4">
-                            <figcaption style="font-style: italic; font-size: .5em">Interesting rebase 4 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h2>The rebase feature</h2>
-                        <figure>
-                            <img src="img/interesting-rebase-5.png" alt="Interesting rebase 5">
-                            <figcaption style="font-style: italic; font-size: .5em">Interesting rebase 5 - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
+                        <p>Merging branches</p>
+                        <pre>
+                            <code data-trim>
+                                git merge branch_name
+                            </code>
+                        </pre>
+                        <p>&nbsp;</p>
+                        <p>Deleting branches</p>
+                        <pre>
+                            <code data-trim>
+                                git branch -[dD] branch_name
+                            </code>
+                        </pre>
                     </section>
                 </section>
 
                 <section>
                     <section>
-                        <h2>Different workflows</h2>
-                        <p>Centralized</p>
-                        <p>Integration-manager</p>
-                        <p>Dictator and lieutenant</p>
+                        <h2>Stashing changes</h2>
+
+                        <p>Pushing into stash</p>
+                        <pre>
+                            <code data-trim>
+                                git stash save "message"
+                            </code>
+                        </pre>
+                        <p>Show stash content</p>
+                        <pre>
+                            <code data-trim>
+                                git stash list
+                            </code>
+                        </pre>
+                        <p>View specific stashed item content</p>
+                        <pre>
+                            <code data-trim>
+                                git stash show stashed_item
+                            </code>
+                        </pre>
                     </section>
 
                     <section>
-                        <h2>Centralized</h2>
-                        <figure>
-                            <img src="img/centralized_workflow.png" alt="Centralized workflow">
-                            <figcaption style="font-style: italic; font-size: .5em">Centralized workflow - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
+                        <h2>Stashing changes</h2>
 
-                    <section>
-                        <h2>Integration-manager</h2>
-                        <figure>
-                            <img src="img/integration-manager.png" alt="Integration-manager workflow">
-                            <figcaption style="font-style: italic; font-size: .5em">Integration-manager workflow - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
-                    </section>
-
-                    <section>
-                        <h2>Dictator and lieutenant</h2>
-                        <figure>
-                            <img src="img/benevolent-dictator.png" alt="Dictator and lieutenant workflow">
-                            <figcaption style="font-style: italic; font-size: .5em">Dictator and lieutenant workflow - Reference: <a href="http://git-scm.com/book/en/v2">Pro Git, 2nd edition</a></figcaption>
-                        </figure>
+                        <p>Pulling from stash</p>
+                        <pre>
+                            <code data-trim>
+                                git stash pop [stashed_item] (default: last one)
+                            </code>
+                        </pre>
+                        <p>Droping stashed item from stash</p>
+                        <pre>
+                            <code data-trim>
+                                git stash drop stashed_item
+                            </code>
+                        </pre>
+                        <p>Clearing whole stash</p>
+                        <pre>
+                            <code data-trim>
+                                git stash clear
+                            </code>
+                        </pre>
                     </section>
                 </section>
 
