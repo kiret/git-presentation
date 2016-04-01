@@ -500,23 +500,44 @@ git commit -m "some message"
                 </section>
 
                 <section>
+                    <section>
+                        <h2>Git logging & log search</h2>
+
+                        <pre>
+                            <code data-trim>
+                                git log [-n]
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim>
+                                git log [--since=][--after=][--until=][--before=]
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim>
+                                git log [--author=][--grep=]
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
                     <h2>Git logging & log search</h2>
 
+                    <p>&nbsp;</p>
+                    <p style="text-align: left">Difference between commits</p>
                     <pre>
                         <code data-trim>
-                            git log [-n]
+                            git log -p checksum1..checksum2 [file_name]
                         </code>
                     </pre>
+
+                    <p style="text-align: left">Present current git flow</p>
                     <pre>
                         <code data-trim>
-                            git log [--since=][--after=][--until=][--before=]
+                            git log --graph --oneline --all --decorate
                         </code>
                     </pre>
-                    <pre>
-                        <code data-trim>
-                            git log [--author=][--grep=]
-                        </code>
-                    </pre>
+                </section>
                 </section>
 
                 <section>
@@ -676,7 +697,7 @@ git commit -m "some message"
 
                     <section>
                         <h2>Public clouds</h2>
-                        <p class="fragment">Examples: <a href="https://github.com/">GitHub</a>, <a href="https://bitbucket.org/">Bitbucked</a></p>
+                        <p class="fragment">Examples: <a href="https://github.com/">GitHub</a>, <a href="https://bitbucket.org/">Bitbucket</a></p>
                         <p class="fragment">Git is not GitHub !</p>
                         <p class="fragment">Generally free for public repositories</p>
                     </section>
